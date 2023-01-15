@@ -1,13 +1,13 @@
 ﻿// Написать программу, которая из имеющегося массива строк формирует новый массив из строк, длина которых меньше, либо равна 3 символам. 
 // Первоначальный массив можно ввести с клавиатуры, либо задать на старте выполнения алгоритма. 
 // При решении не рекомендуется пользоваться коллекциями, лучше обойтись исключительно массивами.
-Console.Write("Введите в консоль данные через пробел: ");
+Console.Write("Введите в консоль массив через пробел: ");
 string inputText = Console.ReadLine(); // получаем текст с консоли
 string[] stringArray = inputText.Split(' ');
 for (int i = 0; i < stringArray.Length; i++)
 {
-    if (stringArray[i].Length <= 2)
+    if (stringArray[i].Length <= 3)
     {
-        Console.WriteLine(stringArray[i]);
+        Console.Write(" " + stringArray[i]);
     }
 }
